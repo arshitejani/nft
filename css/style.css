@@ -1642,6 +1642,85 @@ color: #fff;
   transform: translateY(-50%);
   fill: #aaa;
 }
+
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .profile-bar {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+  }
+
+  .item {
+    margin: 10px 0;
+  }
+
+  .item h3 {
+    font-size: 14px;
+  }
+
+  .item p {
+    font-size: 18px;
+  }
+
+  .line {
+    height: 30px;
+  }
+
+  .page-search-box {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .profile-bar {
+    flex-direction: column;
+    padding: 10px 5px;
+  }
+
+  .item h3 {
+    font-size: 12px;
+  }
+
+  .item p {
+    font-size: 16px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .page-search-box {
+    width: 120px;
+  }
+
+  .page-follow-btn {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+/* Media Query for Extra Small Devices (max-width: 375px) */
+@media (max-width: 375px) {
+  .item h3 {
+    font-size: 10px;
+  }
+
+  .item p {
+    font-size: 14px;
+  }
+
+  .page-search-box {
+    width: 100px;
+  }
+
+  .page-follow-btn {
+    font-size: 12px;
+  }
+}
 /*---------------------------------------------------------------page-s-bar-------------------------------------------------------------------------------------*/
 .page-s-bar {
   font-family: 'Poppins', sans-serif;
@@ -2035,6 +2114,116 @@ color: #fff;
 .au-reset-btn:hover {
   background-color: #eee;
 }
+
+/* Default styles for large screens */
+.au-form-body {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  width: 900px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-container h1 {
+  text-align: center;
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
+
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+  .form-container {
+    grid-template-columns: 1fr;
+    width: 600px;
+    padding: 15px;
+  }
+
+  .form-container h1 {
+    grid-column: span 1;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .upload-area {
+    height: 200px;
+  }
+
+  .ua-text-2 {
+    font-size: 20px;
+  }
+}
+
+/* Media Query for Mobile Devices (576px and below) */
+@media (max-width: 576px) {
+  .form-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .upload-area {
+    height: 150px;
+    padding: 15px;
+  }
+
+  .ua-text-1 {
+    font-size: 16px;
+  }
+
+  .ua-text-2 {
+    font-size: 18px;
+  }
+
+  .ua-text-3 {
+    font-size: 12px;
+  }
+
+  .au-btn {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+/* Media Query for Extra Small Devices (375px and below) */
+@media (max-width: 375px) {
+  .form-container {
+    padding: 5px;
+  }
+
+  .upload-area {
+    height: 120px;
+    font-size: 12px;
+  }
+
+  .au-btn {
+    font-size: 12px;
+  }
+
+  .ua-text-3 {
+    font-size: 10px;
+  }
+}
+
 /*----------------------------------------------------------------------------------FAQS---------------------------------------------------------------------------------------------------*/
 
 .header-6{
@@ -2140,7 +2329,69 @@ color: #fff;
 .line-1{
   color: #000000;
 }
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .faqs-textcard-cantainer {
+    height: auto;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
 
+  .faqs-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .faqs-question, .faqs-question-1 {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+
+  .faqs-answer {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .faqs-textcard-cantainer {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .faqs-card {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .faqs-question, .faqs-question-1 {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .faqs-answer {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+}
+
+/* Media Query for Extra Small Devices (max-width: 375px) */
+@media (max-width: 375px) {
+  .faqs-card {
+    padding: 8px;
+  }
+
+  .faqs-question, .faqs-question-1 {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  .faqs-answer {
+    font-size: 12px;
+    padding-left: 10px;
+  }
+}
 /*----------------------------------------------------------------------------------SING IN---------------------------------------------------------------------------------------------------*/
 
 .header-7{
@@ -2420,6 +2671,7 @@ color: #fff;
   text-align: center; 
 }
 .error-text-container{
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 .error-text-1{
@@ -2452,7 +2704,35 @@ color: #fff;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(92.74deg, #1B63FF 0.47%, #21E7B7 100%);
 }
+.error-photo{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  .p-c-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* For mobile (576px and below) */
+@media (max-width: 576px) {
+  .p-c-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* For extra small devices (375px and below) */
+@media (max-width: 375px) {
+  .p-c-card img {
+    width: 70px;
+    height: 70px;
+  }
+}
 /*---------------------------------------------------------------------error----------------------------------------------------------------------------------------------------*/
 .header-8{
   min-height: 100vh;
@@ -2565,6 +2845,54 @@ color: #fff;
   letter-spacing: 0.005em;
   font-family: 'Poppins', sans-serif;
 }
+
+/* Media Query for Mobile Devices (576px and below) */
+@media (max-width: 576px) {
+  .Blog-card-1 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Blog-card-1-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  .Blog-card-1-heading-text {
+    font-size: 14px;
+  }
+
+  .Blog-card-1-h2-text {
+    font-size: 10px;
+  }
+
+  .blog-text-2 h3,
+  .blog-text-1 h5 {
+    font-size: 20px;
+  }
+}
+
+/* Media Query for Extra Small Devices (375px and below) */
+@media (max-width: 375px) {
+  .Blog-card-1-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .Blog-card-1-heading-text {
+    font-size: 12px;
+  }
+
+  .Blog-card-1-h2-text {
+    font-size: 9px;
+  }
+
+  .blog-text-2 h3,
+  .blog-text-1 h5 {
+    font-size: 18px;
+  }
+}
 /*-------------------------------------CARD-2----------------------------------------------*/
 
 /* Card container */
@@ -2655,6 +2983,110 @@ color: #fff;
   padding-left: 20px;
 }
 
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .Blog-card-2 {
+    flex-direction: column;
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .Blog-card-2-left,
+  .Blog-card-2-right {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .Blog-card-2-main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .Blog-card-2-center .Blog-card-2-image-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .Blog-card-2-additional-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Blog-card-2-text-column {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .Blog-card-2 {
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .Blog-card-2-left,
+  .Blog-card-2-right {
+    padding: 10px;
+  }
+
+  .Blog-card-2-main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .Blog-card-2-additional-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Blog-card-2-text-container p {
+    font-size: 14px;
+  }
+
+  .Blog-card-2-right p {
+    font-size: 10px;
+  }
+
+  .Blog-card-2-right h3 {
+    font-size: 10px;
+    padding-left: 0;
+  }
+}
+
+/* Media Query for Extra Small Devices (max-width: 375px) */
+@media (max-width: 375px) {
+  .Blog-card-2 {
+    margin: 10px auto;
+  }
+
+  .Blog-card-2-main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .Blog-card-2-additional-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .Blog-card-2-text-container p {
+    font-size: 12px;
+  }
+
+  .Blog-card-2-right p {
+    font-size: 8px;
+  }
+
+  .Blog-card-2-right h3 {
+    font-size: 8px;
+  }
+}
+/*-----------------------------------------crad-3--------------------------------------------------------*/
 .blog-card-3-body{
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -2695,6 +3127,71 @@ color: #fff;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* Media Query for Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .blog-card-3 {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .blog-card-3-text-container {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .blog-card-3image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-card-3-text-h1 {
+    font-size: 16px;
+  }
+
+  .blog-card-3-text-p {
+    font-size: 12px;
+  }
+}
+
+/* Media Query for Mobile Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .blog-card-3 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .blog-card-3-text-container {
+    padding: 15px;
+  }
+
+  .blog-card-3-text-h1 {
+    font-size: 14px;
+  }
+
+  .blog-card-3-text-p {
+    font-size: 10px;
+  }
+
+  .blog-card-3image-container img {
+    height: auto;
+  }
+}
+
+/* Media Query for Extra Small Devices (max-width: 375px) */
+@media (max-width: 375px) {
+  .blog-card-3-text-container {
+    padding: 10px;
+  }
+
+  .blog-card-3-text-h1 {
+    font-size: 12px;
+  }
+
+  .blog-card-3-text-p {
+    font-size: 8px;
+  }
 }
 /*--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------form-4--------------------------------*/
