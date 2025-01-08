@@ -488,20 +488,6 @@ right: 10px;
 font-size: 24px;
 }
 /*browse by category*/
-
-@media (max-width: 768px) {
-  .gallery-container{
-    width: calc(50% - 20px); 
-  }
-}
-
-
-@media (max-width: 480px) {
-  .gallery-container {
-    width: 100%; 
-  }
-}
-
 .bbc{
   margin-top: 80px;
   background-size: cover;
@@ -553,6 +539,39 @@ margin:20px;
   line-height: 23.85px;
   letter-spacing: 0.005em;
 
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1024px) {
+  .gallery-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+      padding: 0 10px;
+  }
+
+  .image-item img {
+      max-width: 250px; /* Adjust image size */
+      max-height: 200px;
+  }
+
+  .image-item p {
+      font-size: 16px; /* Slightly smaller font */
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+      padding: 0 5px;
+  }
+
+  .image-item img {
+      max-width: 200px; /* Smaller image size */
+      max-height: 160px;
+  }
+
+  .image-item p {
+      font-size: 14px; /* Smaller font for mobile */
+  }
 }
 /*-------id cards--------*/
 
