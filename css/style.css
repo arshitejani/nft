@@ -87,6 +87,7 @@ position: relative;
   padding: 0px;
   z-index: 10;
   width: 200px;
+  border: 1px solid #ddd; 
 }
 
 .navbar-menu li:hover > .dropdown {
@@ -97,6 +98,7 @@ position: relative;
   display: block;
   text-align: start;
   margin: 5px;
+  border-bottom: 1px solid #ddd;
 }
 
 .navbar-menu .dropdown li a {
@@ -111,6 +113,7 @@ position: relative;
 .navbar-menu .dropdown li a:hover {
   background-color: #21E7B7;
   color: #fff;
+
 }
 
 .navbar-menu .dropdown .dropdown {
@@ -118,6 +121,7 @@ position: relative;
   left: 100%;
   margin-left: 10px;
   width: 180px;
+
 }
 
 /* For extra small devices (375px and below) */
