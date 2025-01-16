@@ -73,25 +73,60 @@
 <!----------------------------------------------------------------faqs-textcard-cantainer------------------------------------------------------------------------------>
 <div class="faqs-textcard-cantainer">
     <div class="faqs-card">
-        <div class="faqs-question-1">What is cryptocurrency (NFT) marketplace?</div>
-        <div class="line-1"></div>
-        <div class="faqs-answer">Non-fungible tokens and their smart contracts allow for detailed attributes to be added, like the identity of the owner, rich metadata, or secure file links. The potential of non-fungible tokens to immutably prove digital ownership is an important progression for an increasingly digital world. They could see blockchain’s promise of trustless security applied to the ownership or exchange of almost any asset.</div>
+      <div class="faqs-question">
+        <span class="toggle-icon"></span>
+        <span>What is cryptocurrency (NFT) marketplace?</span>
+      </div>
+      <div class="faqs-answer">Non-fungible tokens and their smart contracts allow for detailed attributes to be added, like the identity of the owner, rich metadata, or secure file links. The potential of non-fungible tokens to immutably prove digital ownership is an important progression for an increasingly digital world. They could see blockchain’s promise of trustless security applied to the ownership or exchange of almost any asset.</div>
     </div>
-
+</div>
+<div class="faqs-textcard-cantainer">
     <div class="faqs-card">
-      <div class="faqs-question">Can I make money on it?</div>
+      <div class="faqs-question">
+        <span class="toggle-icon"></span>
+        <span>Can I make money on it?</span>
+      </div>
+      <div class="faqs-answer">Yes, it is possible to make money through NFTs by creating, selling, and trading them. Some NFTs have sold for significant amounts, although the market can be volatile.</div>
     </div>
+</div>
+<div class="faqs-textcard-cantainer">
     <div class="faqs-card">
-      <div class="faqs-question">How Do You Know Your NFT Is Authentic?</div>
+      <div class="faqs-question">
+        <span class="toggle-icon"></span>
+        <span>How Do You Know Your NFT Is Authentic?</span>
+      </div>
+      <div class="faqs-answer">NFTs are authenticated through blockchain technology, ensuring that the ownership and transaction history are publicly recorded and cannot be tampered with.</div>
     </div>
+</div>
+<div class="faqs-textcard-cantainer">
     <div class="faqs-card">
-      <div class="faqs-question">How Are Non-Fungible Tokens Used?</div>
-     </div>
-     <div class="faqs-card">
-      <div class="faqs-question">Who’s Making Waves In The NFT Space?</div>
-     </div>
-
+      <div class="faqs-question">
+        <span class="toggle-icon"></span>
+        <span>How Are Non-Fungible Tokens Used?</span>
+      </div>
+      <div class="faqs-answer">Non-fungible tokens can be used to represent ownership of unique items such as digital art, music, video, and even real-world assets like real estate.</div>
+    </div>
+</div>
+<div class="faqs-textcard-cantainer">
+    <div class="faqs-card">
+      <div class="faqs-question">
+        <span class="toggle-icon"></span>
+        <span>Who’s Making Waves In The NFT Space?</span>
+      </div>
+      <div class="faqs-answer">Notable figures in the NFT space include digital artists like Beeple, brands like NBA Top Shot, and platforms like OpenSea and Rarible.</div>
+    </div>
   </div>
+</div>
+  <script>
+    // Toggle the display of the answer and change the icon
+    document.querySelectorAll('.faqs-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const faqCard = question.parentElement;
+        faqCard.classList.toggle('active');
+      });
+    });
+  </script>
+
  <!-------------------footer------------------------>
    <footer>
     <div class="footer-container">
